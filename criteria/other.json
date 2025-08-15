@@ -41,13 +41,7 @@
             "unit": {
               "name": "відсоток",
               "code": "P1"
-            },
-            "eligibleEvidences": [
-              {
-                "title": "",
-                "type": "document"
-              }
-            ]
+            }
           }
         ]
       },
@@ -56,6 +50,7 @@
         "requirements": [
           {
             "title": "Товар походить з однієї з країн, що підписала Угоду про державні закупівлі Світової Організації торгівлі (GPA) або іншої країни з якою Україна має міжнародні договори про державні закупівлі",
+            "dataSchema": "ISO 3166-1 alpha-2",
             "dataType": "string",
             "expectedMinItems": 1,
             "expectedValues": [
@@ -236,10 +231,14 @@
         "requirements": [
           {
             "title": "Мова тендерної пропозиції",
+            "dataSchema": "ISO 639-3",
             "dataType": "string",
             "expectedMinItems": 1,
             "expectedValues": [
-              "Українська"
+              "ukr",
+              "eng",
+              "fra",
+              "spa"
             ]
           }
         ]
@@ -284,7 +283,7 @@
           {
             "title": "Розмір забезпечення тендерної пропозиції/пропозиції у грошовому виразі у % від очікуваної вартості закупівлі",
             "dataType": "number",
-            "minValue": 0.5,
+            "minValue": 0.0,
             "maxValue": 3.0,
             "unit": {
               "name": "відсоток",
@@ -413,7 +412,7 @@
       "scheme": "ESPD211",
       "id": "CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.SUBCONTRACTING_PROPORTION"
     },
-    "relatesTo": "tender",
+    "relatesTo": "",
     "legislation": [
       {
         "version": "2024-10-23",
