@@ -1,0 +1,14 @@
+{
+  "contractBreach": {
+    "description_uk": "Постачальник порушив контракт",
+    "description_en": "The supplier has breached the contract"
+  },
+  "goodsNonCompliance": {
+    "description_uk": "Якість товару не відповідає нормі",
+    "description_en": "The quality of the product does not meet the norm"
+  },
+  "signingRefusal": {
+    "description_uk": "Постачальник відмовився від підписання контракту",
+    "description_en": "The supplier refused to sign the contract"
+  }
+}
